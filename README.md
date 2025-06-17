@@ -11,6 +11,7 @@ This project implements **real-time detection of American Sign Language (ASL)** 
 ├── processed_data/            # Processed images after hand detection
 ├── train.py                   # CNN training and evaluation
 ├── webCam.py                 # Inference using webcam
+├── mediapipe_hand_preprocess.py # Hand tracking and preprocessing
 ├── asl_model.h5               # Trained CNN model
 ├── README.md                  # Project documentation
 ```
@@ -63,12 +64,12 @@ Dataset: [ASL Alphabet Dataset](https://www.kaggle.com/datasets/grassknoted/asl-
 
 3. **Train the CNN model**
    ```bash
-   python model.py
+   python train.py
    ```
 
 4. **Run real-time prediction**
    ```bash
-   python predict.py
+   python webcam.py
    ```
 
 ---
